@@ -11,16 +11,16 @@
         <div class="container border">
             <h2 >Cadastro de país</h2>
             <form>
-                <label>Nome: </label><input type="text" name="nomePais" id="txtNomePais" class="form-control"><br/><br/>
+                <label>Nome: </label><input type="text" name="nomePais" id="txtNomePais" class="form-control" required><br/><br/>
                 <label>Sigla: </label>
-                <select id="sigla" nome="sigla" class="form-select">
+                <select id="sigla" nome="sigla" class="form-select" required>
                     <option>BRA</option>
                     <option>EUA</option>
                     <option>ARG</option>
                     <option>CAN</option>
                 </select><br/><br/>
-                <button class="btn btn-primary"> Limpar </button>
-                <button class="btn btn-primary"> Cadastrar </button>
+                <button name="btnLimpar3" class="btn btn-primary"> Limpar </button>
+                <button name="btnCadastrar3" class="btn btn-primary"> Cadastrar </button>
             </form>
         </div><br/><br/><br/>
         <div class="container border">
@@ -31,7 +31,9 @@
                         <th>Sigla</th>
                     </tr>
                 </thead>
-            </table>
+            </table><br/><br/>
+            <button name="btnAlterar3" class="btn btn-primary"> Alterar </button>
+            <button name="btnRemover3" class="btn btn-primary"> Remover </button>
         </div>
     </body>
 
