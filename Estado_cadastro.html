@@ -2,34 +2,40 @@
 
     <header>
 
+        <meta charset="utf-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, user-scalable = no">
 
     </header>
 
     <body>
+
+        <br/><br/>
         <div class="container border">
-            <h2>Cadastro de estados</h2>
+            <h2 style="text-align: center;">Cadastro de estados</h2><br/>
             <form>
-                <label>Nome: </label><input type="text" name="nomeEstado" id="txtNomeEstado" class="form-control" required><br/><br/>
+                <label>Nome: </label><input type="text" name="nomeEstado" id="txtNomeEstado" class="form-control" placeholder="estado" required><br/><br/>
                 <label>UF: </label>
-                <select id="uf" name="uf" class="form-select" required>
+                <select id="uf" name="uf" class="form-select">
+                    <option>selecione a UF</option>
                     <option>RS</option>
                     <option>SC</option>
                     <option>PR</option>
                     <option>SP</option>
                 </select><br/><br/>
                 <label>País: </label>
-                <select id="pais" name="pais" class="form-select" required>
+                <select id="pais" name="pais" class="form-select">
+                    <option>Selecione o país</option>
                     <option>Brasil</option>
                     <option>EUA</option>
                     <option>Argentina</option>
                     <option>Canadá</option>
                 </select><br/><br/>
-                <button name="btnLimpar2" class="btn btn-primary"> Limpar </button>
-                <button name="btnCadastrar2" class="btn btn-primary"> Cadastrar </button>
+                <button type="reset" name="btnLimpar2" class="btn btn-info"> Limpar <img src="application_form.png"> </button>
+                <button type="submit" name="btnCadastrar2" class="btn btn-success"> Cadastrar <img src="accept.png"> </button>
             </form>
         </div><br/><br/><br/>
+        
         <div class="container border">
             <table class="table">
                 <thead>    
@@ -40,9 +46,10 @@
                     </tr>
                 </thead>
             </table><br/><br/>
-            <button name="btnAlterar2" class="btn btn-primary"> Alterar </button>
-            <button name="btnRemover2" class="btn btn-primary"> Remover </button>
+            <button name="btnAlterar2" class="btn btn-warning"> Alterar <img src="table_edit.png"> </button>
+            <button name="btnRemover2" class="btn btn-danger"> Remover <img src="table_delete.png"> </button>
         </div>
+    
     </body>
 
 </html>
